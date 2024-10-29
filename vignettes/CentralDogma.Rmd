@@ -22,7 +22,22 @@ library(CentralDogma)
 
 ### sample_nuc
 
+sample_nuc takes an integer as input and outputs a string. The output string is a DNA sequence, which is a character-string only using "A", "C", "T" and "G" representing each of the nucleotides in DNA. The length of the string is based on the input integer. An example of a string with the length 6 is shown below.
+
+```{r}
+set.seed(3)
+dna <- sample_nuc(6)
+dna
+```
+
 ### translate_DNA
+
+translate_DNA takes a DNA string as input and outputs the corresponding RNA string. The input string is translated by replacing every "T" with a "U". Using the DNA-string made in the example above using *sample_nuc()*, an example of the use of *translate_DNA* can be seen below:
+
+```{r}
+rna <- translate_DNA(dna)
+rna
+```
 
 ## Demonstration
 
