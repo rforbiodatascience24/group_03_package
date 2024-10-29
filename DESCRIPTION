@@ -25,7 +25,7 @@ Authors@R:
            family = "Nielsen",
            role = "aut",
            email = "rasmuskamp@hotmail.com"))
-    person(given = "firstname",
-           family = "lastname",
+    person(given = "Rolf",
+           family = "Larsen",
            role = "aut",
-           email = "your@email.com"))
+           email = "s215109@student.dtu.dk"))
