@@ -17,3 +17,13 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(CentralDogma)
 ```
+
+## Description
+
+### sample_nuc
+
+### translate_DNA
+
+## Demonstration
+
+## Discussion
