@@ -17,6 +17,10 @@ Authors@R:
            family = "Kirketerp-Møller",
            role = "aut",
            email = "s225074@dtu.com")),
+    person(given = "Emil",
+           family = "Berntsen",
+           role = "aut",
+           email = "s225051@dtu.dk"))
     person(given = "firstname",
            family = "lastname",
            role = "aut",
