@@ -8,7 +8,6 @@ Description: Something about replicating the central dogma.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-
 Authors@R:
   c(person(given = "Ida",
            family = "Goldschmidt",
