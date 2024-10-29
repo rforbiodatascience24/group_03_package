@@ -32,7 +32,6 @@ library(CentralDogma)
 
 The **extract_codons** function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
 
-
 ### transscript_aa_sequence
 
 This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
