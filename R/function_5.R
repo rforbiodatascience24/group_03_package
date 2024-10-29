@@ -1,31 +1,27 @@
-
-
-#' A function which takes a data frame of codons and counts them before plotting in a column plot (idk?)
+#' Testing if R still doesnt like me
 #'
-#' @param codon_table a dataframe of codons
+#' @param temp_name
 #'
-#' @return returns a column plot of codon counts
+#' @return returns something
 #' @export
-#' @import ggplot2
-#' @importFrom stringr str_split boundary str_count
 #'
-function_5 <- function(codon_table){
-  codon_vector <- codon_table |>
+name_me1 <- function(name_me2){
+  name_me3 <- name_me2 |>
     stringr::str_split(pattern = stringr::boundary("character"), simplify = TRUE) |>
     as.character() |>
     unique()
 
-  counts <- sapply(codon_vector, function(amino_acid) stringr::str_count(string = codon_table, pattern =  amino_acid)) |>
+  counts <- sapply(name_me3, function(amino_acid) stringr::str_count(string = name_me2, pattern =  amino_acid)) |>
     as.data.frame()
 
   colnames(counts) <- c("Counts")
-  counts[["codon_table"]] <- rownames(counts)
+  counts[["Name_me2"]] <- rownames(counts)
 
-  codon_count <- counts |>
-    ggplot2::ggplot(ggplot2::aes(x = codon_table, y = Counts, fill = codon_table)) +
+  name_me4 <- counts |>
+    ggplot2::ggplot(ggplot2::aes(x = Name_me2, y = Counts, fill = Name_me2)) +
     ggplot2::geom_col() +
     ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "none")
 
-  return(codon_count)
+  return(name_me4)
 }
