@@ -15,6 +15,6 @@ codon_table
 }
 \description{
 Description
-It is a tbale of translations of codons
+It is a table of translations of codons
 }
 \keyword{datasets}
