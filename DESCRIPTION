@@ -14,6 +14,10 @@ Authors@R:
            family = "Goldschmidt",
            role = c("aut", "cre"), # There must be a "cre", but there can only be one
            email = "s225049@dtu.dk"), 
+    person(given = "Annekatrine",
+           family = "Kirketerp-Møller",
+           role = "aut",
+           email = "s225074@dtu.com")),
     person(given = "firstname",
            family = "lastname",
            role = "aut",
