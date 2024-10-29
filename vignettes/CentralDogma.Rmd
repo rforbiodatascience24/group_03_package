@@ -53,4 +53,12 @@ rna <- translate_DNA(dna)
 rna
 ```
 
+An example of how the extract_codons functions can be used
+
+```{r}
+codons <- extract_codons(rna, 1)
+codons
+
+```
+
 ## Discussion
