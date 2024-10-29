@@ -7,7 +7,7 @@
 #' @import ggplot2
 #' @importFrom stringr str_split boundary str_count
 #'
-function_5 <- function(codon_table){
+plot_codons <- function(codon_table){
   codon_vector <- codon_table |>
     stringr::str_split(pattern = stringr::boundary("character"), simplify = TRUE) |>
     as.character() |>
