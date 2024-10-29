@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: Something about replicating the central dogma.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Authors@R:
@@ -31,7 +31,14 @@ Authors@R:
            email = "s215109@student.dtu.dk"))
 Depends: 
     R (>= 2.10)
+<<<<<<< HEAD
 RoxygenNote: 7.3.2
 Imports: 
     ggplot2,
     stringr
+=======
+RoxygenNote: 7.3.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+>>>>>>> 2d2b6bcf6e1fdef0729a5c5d8f580e0719734eef
