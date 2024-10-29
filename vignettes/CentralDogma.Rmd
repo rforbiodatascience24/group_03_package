@@ -24,6 +24,10 @@ library(CentralDogma)
 
 ### translate_DNA
 
+### transscript_aa_sequence
+
+This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
+
 ## Demonstration
 
 ## Discussion
