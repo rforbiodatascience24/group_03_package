@@ -17,6 +17,6 @@ A vector of transscripted amino acids in pairs of 3 in their
 Transscript Amino acid Sequence (Function_4)
 }
 \examples{
-aa_sequence("AUGUUGCCGCAACGG")
-aa_sequence("AUGUAA")
+transscript_aa_sequence("AUGUUGCCGCAACGG")
+transscript_aa_sequence("AUGUAA")
 }

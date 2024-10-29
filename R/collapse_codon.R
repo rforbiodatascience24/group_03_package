@@ -6,8 +6,8 @@
 #'         single letter form
 #' @export
 #'
-#' @examples aa_sequence("AUGUUGCCGCAACGG")
-#' aa_sequence("AUGUAA")
+#' @examples transscript_aa_sequence("AUGUUGCCGCAACGG")
+#' transscript_aa_sequence("AUGUAA")
 transscript_aa_sequence <- function(codons){
   codon_sequence_raw <- paste0(codon_table[codons], collapse = "")
   return(codon_sequence_raw)
