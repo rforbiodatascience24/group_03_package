@@ -25,3 +25,5 @@ Authors@R:
            family = "lastname",
            role = "aut",
            email = "your@email.com"))
+Depends: 
+    R (>= 2.10)
