@@ -6,7 +6,10 @@
 #' @return A vector of codons extracted from the RNA sequence starting from the start position provided
 #' @export
 #'
-#' @examples rna_seq <- "AUGGUGAUG" start <- 1 extract_codons(rna_seq, start) # [1] "AUG" "GUG" "AUG"
+#' @examples
+#' rna_seq <- "AUGGUGAUG"
+#' start <- 1
+#' extract_codons(rna_seq, start) # [1] "AUG" "GUG" "AUG"
 extract_codons <- function(rna_seq, start = 1){
   seq_length <- nchar(rna_seq)
   codons <- substring(rna_seq,

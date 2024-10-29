@@ -18,5 +18,7 @@ A vector of codons extracted from the RNA sequence starting from the start posit
 Extracts codons from a RNA sequence
 }
 \examples{
-rna_seq <- "AUGGUGAUG" start <- 1 extract_codons(rna_seq, start) # [1] "AUG" "GUG" "AUG"
+rna_seq <- "AUGGUGAUG"
+start <- 1
+extract_codons(rna_seq, start) # [1] "AUG" "GUG" "AUG"
 }
