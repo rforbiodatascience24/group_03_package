@@ -25,12 +25,16 @@ library(CentralDogma)
 *sample_nuc* takes an integer as input and outputs a string. The output string is a DNA sequence, which is a character-string only using "A", "C", "T" and "G" representing each of the nucleotides in DNA. The length of the string is based on the input integer.
 
 ### translate_DNA
+*translate_DNA* takes a DNA string as input and outputs the corresponding RNA string. The input string is translated by replacing every "T" with a "U". The input could for example come from the output from *sample_nuc()*,
 
 ### transscript_aa_sequence
 
 This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
-=======
-*translate_DNA* takes a DNA string as input and outputs the corresponding RNA string. The input string is translated by replacing every "T" with a "U". The input could for example come from the output from *sample_nuc()*,
+
+
+### Extract_codons
+
+The **extract_codons** function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
 
 ## Demonstration
 
