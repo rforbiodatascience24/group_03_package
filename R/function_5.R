@@ -1,6 +1,6 @@
 #' A function which takes a data frame of codons and counts them before plotting in a column plot (idk?)
 #'
-#' @param codon_table a string of amino acids in single letter format
+#' @param amino_acids a string of amino acids in single letter format
 #'
 #' @return returns a column plot of codon counts
 #' @export
