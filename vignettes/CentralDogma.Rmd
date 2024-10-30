@@ -46,7 +46,11 @@ This code takes a vector made up of RNA codons in pairs of three RNA nucleotides
 
 ### plot_aas
 
-The **plot_aas** function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the dataframe in a column plot with the x-axis being the amino acids and the y-axis being their counts.
+The **plot_aas** function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the data frame in a column plot with the x-axis being the amino acids and the y-axis being their counts.
+
+### find_stop_start
+
+The **find_stop_start** function takes on a string of amino acids and finds possible start and stop codons index positions in that string. 
 
 ## Demonstration
 
