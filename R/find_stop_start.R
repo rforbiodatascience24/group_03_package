@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' dna_sequence <- "ATGCGTAAATGCGTAGATGCCTGA"
-#' codon_positions <- find_codons(dna_sequence)
+#' codon_positions <- find_stop_start(dna_sequence)
 #' print(codon_positions)
 find_stop_start <- function(dna_seq) {
   dna_seq <- toupper(dna_seq)
