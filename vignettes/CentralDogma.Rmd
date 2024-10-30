@@ -50,3 +50,5 @@ rna
 ```
 
 ## Discussion
+
+This package can be useful when working with DNA-sequences, since the most basic functions are created. The package can translate and transcribe a given DNA string, and create sample-strings used for testing if no real data is available.
