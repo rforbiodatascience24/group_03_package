@@ -42,8 +42,8 @@ dna <- sample_nuc(60)
 dna
 ```
 
-**find_stop_start\
-**The *find_stop_start* function takes on a string of amino acids and finds possible start and stop codons index positions in that string.
+**find_stop_start**\
+The *find_stop_start* function takes on a string of amino acids and finds possible start and stop codons index positions in that string.
 ```{r}
 codon_index <- find_stop_start(dna)
 print(codon_index)
@@ -56,22 +56,22 @@ rna <- translate_DNA(dna)
 rna
 ```
 
-**Extract_codons\
-**The *extract_codons* function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
+**Extract_codons**\
+The *extract_codons* function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
 ```{r}
 codons <- extract_codons(rna, 1)
 codons
 ```
 
-**transscript_aa_sequence\
-**This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
+**transscript_aa_sequence**\
+This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
 ```{r}
 trans <- transscript_aa_sequence(codons)
 trans
 ```
 
-**plot_aas\
-**The *plot_aas* function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the data frame in a column plot with the x-axis being the amino acids and the y-axis being their counts.
+**plot_aas**\
+The *plot_aas* function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the data frame in a column plot with the x-axis being the amino acids and the y-axis being their counts.
 
 ```{r fig.height=2}
 plot_aas(trans)
