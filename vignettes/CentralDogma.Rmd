@@ -1,12 +1,11 @@
 ---
+title: "Central Dogma"
 output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{CentralDogma}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-
-## CentralDogma {style="text-align:center"}
 
 ### Group members:
 
@@ -32,29 +31,10 @@ knitr::opts_chunk$set(
 library(CentralDogma)
 ```
 
-### Description
+### Description and demonstration
 
 **sample_nuc**\
 *sample_nuc* takes an integer as input and outputs a string. The output string is a DNA sequence, which is a character-string only using "A", "C", "T" and "G" representing each of the nucleotides in DNA. The length of the string is based on the input integer.
-
-**find_stop_start\
-**The *find_stop_start* function takes on a string of amino acids and finds possible start and stop codons index positions in that string.
-
-**translate_DNA\
-***translate_DNA* takes a DNA string as input and outputs the corresponding RNA string. The input string is translated by replacing every "T" with a "U". The input could for example come from the output from *sample_nuc()*.
-
-**Extract_codons\
-**The *extract_codons* function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
-
-**transscript_aa_sequence\
-**This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
-
-**plot_aas\
-**The *plot_aas* function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the data frame in a column plot with the x-axis being the amino acids and the y-axis being their counts.
-
-### Demonstration
-
-An example of a string with the length 60, created using *sample_nuc()* is shown below.
 
 ```{r}
 set.seed(6)
@@ -62,35 +42,36 @@ dna <- sample_nuc(60)
 dna
 ```
 
-An example of the use of *translate_DNA* can be seen below:
-
-```{r}
-rna <- translate_DNA(dna)
-rna
-```
-
-An example of the start and stop codons function:
-
+**find_stop_start\
+**The *find_stop_start* function takes on a string of amino acids and finds possible start and stop codons index positions in that string.
 ```{r}
 codon_index <- find_stop_start(dna)
 print(codon_index)
 ```
 
-An example of how the extract_codons functions can be used
+**translate_DNA\
+***translate_DNA* takes a DNA string as input and outputs the corresponding RNA string. The input string is translated by replacing every "T" with a "U". The input could for example come from the output from *sample_nuc()*.
+```{r}
+rna <- translate_DNA(dna)
+rna
+```
 
+**Extract_codons\
+**The *extract_codons* function takes in two parameters, where the first is the RNA-sequence and the second parameter is the start, from there the function will start reading (where if no start is specified, default is 1). The function then extracts consecutive three-character codons, and lastly It returns a vector of codons, useful for sequence analysis tasks.
 ```{r}
 codons <- extract_codons(rna, 1)
 codons
 ```
 
-An example of the transcription function:
-
+**transscript_aa_sequence\
+**This code takes a vector made up of RNA codons in pairs of three RNA nucleotides, and transscripts them into a string of amino acids representen by their single letter code.
 ```{r}
 trans <- transscript_aa_sequence(codons)
 trans
 ```
 
-An example of the plot function:
+**plot_aas\
+**The *plot_aas* function takes an string of amino acids in their single letter format. It then splits that string into a single character vector, and counts the number of occurrences of each amino acid, resulting in the creating of a dataframe. It then plots the data frame in a column plot with the x-axis being the amino acids and the y-axis being their counts.
 
 ```{r fig.height=2}
 plot_aas(trans)
