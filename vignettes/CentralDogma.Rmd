@@ -34,7 +34,7 @@ library(CentralDogma)
 
 ### find_stop_start
 
-The **find_stop_start** function takes on a string of amino acids and finds possible start and stop codons index positions in that string. 
+The **find_stop_start** function takes on a string of amino acids and finds possible start and stop codons index positions in that string.
 
 ### translate_DNA
 
@@ -100,6 +100,5 @@ plot_aas(trans)
 
 This package can be useful when working with DNA-sequences, since the most basic functions are created. The package can translate and transcribe a given DNA string, find codons as well as create sample-strings used for testing if no real data is available. The package can also plot the amounts of each amino acid in a amino acid sequence, which can be useful to give an overview of the sequence, and to determine whether any amino acids seem particularly abundant in the sequence.
 
-Further functions could be to determine characteristics of the amino acids, for example if they are acidic, basic, hydrophobic, hydrophilic or have other chemical properties. This information could also be plotted to show the chemical properties of a string. \
-Another function could be to determine reading frames, to find the coding region. This could also be used to find specific parts in the non-coding regions like the promoter region or the TATA-box. These parts are not entirely conserved, so the results might not be definitive, but could give probabilities for where the regions are placed.
-
+Further functions could be to determine characteristics of the amino acids, for example if they are acidic, basic, hydrophobic, hydrophilic or have other chemical properties. This information could also be plotted to show the chemical properties of a string.\
+Another function could be to find the coding region, in different reading frames. This could also be used to find specific parts in the non-coding regions like the promoter region or the TATA-box. These parts are not entirely conserved, so the results might not be definitive, but could give probabilities for where the regions are placed.
